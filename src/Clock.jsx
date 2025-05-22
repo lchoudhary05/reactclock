@@ -8,11 +8,11 @@ function Clock(){
          date = new Date()
         setCurr(date.toLocaleTimeString())
     }
+
+    setInterval(clicked,1000)
     
     return(<div style={{textAlign:'center',justifyContent:'center'}}>
         <h1>{curr}</h1>
-        <br/>
-        <button style={{color:'#ecf5bf', backgroundColor:'#394a37'}} onClick={clicked}> Get Time</button>
     </div>
 
 
